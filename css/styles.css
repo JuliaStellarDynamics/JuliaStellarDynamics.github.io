@@ -1,0 +1,116 @@
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif; /* match the readthedocs font */
+    color: #333;
+    max-width: 600px; /* Set an initial maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+.line {
+    border-bottom: 1px solid #333; /* Add a line under the libraries dropdown */
+}
+
+
+.header-banner,
+.dropdown-content,
+.project-description,
+.colab-notebooks,
+.meet-the-team,
+.footer-banner {
+    font-family: 'Source Sans Pro', Arial, sans-serif; /* match the readthedocs font */
+}
+
+.header-banner {
+    /* background-color: #9558B2;*/ /* this is a julia colour, but I don't like it now. */
+    color: #333;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex; /* Use flexbox for layout control */
+    align-items: center; /* Vertically center the logo and title */
+    justify-content: center; /* Horizontally center the logo and title */
+}
+
+.logo {
+    width: 150px; /* Adjust the width of the logo as needed */
+    margin-right: 10px; /* Add some spacing between the logo and the project title */
+}
+
+.title-container {
+    text-align: left; /* Align the title to the left */
+}
+
+
+.dropdown-menu {
+    overflow: hidden;
+    text-align: center;
+    width: 600px; /*100%; this is bad for some reason; instead hardcode to page width */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.dropbtn {
+    background-color: #fff; /*transparent;*/
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.dropdown-content {
+    background-color: #fff; /*transparent;*/
+    display: none;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%; /* Set the width to match the .dropdown-menu */
+}
+
+
+
+.dropdown-content a {
+    color: #333; /* #CB3C33;*/ /* this is a julia colour, but I don't like it now. */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.project-description,
+.colab-notebooks,
+.meet-the-team,
+.footer-banner {
+    margin: 5px 0; /* Add margin to separate sections */
+    padding: 15px;
+}
+
+.section-heading {
+    font-size: 24px; /* Set a larger font size for section headings */
+    margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+
+.footer-banner {
+    /*background-color: #ddd;*/
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 100%; /* Allow the width to scale for smaller screens */
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="css/logo.png" type="image/png">
+        <script src="js/dropdown.js" defer></script>
+        <title>Your Project</title>
+    </head>
+    
+<!-- Dropdown Menu -->
+<nav class="dropdown-menu">
+    <button class="dropbtn">Libraries (click to see dropdown menu)</button>
+    <div class="dropdown-content">
+        <a href="https://juliastellardynamics.github.io/OrbitalElements.jl/dev/">OrbitalElements.jl</a>
+        <a href="https://juliastellardynamics.github.io/AstroBasis.jl/dev/">AstroBasis.jl</a>
+        <a href="https://juliastellardynamics.github.io/FiniteHilbertTransform.jl/dev/">FiniteHilbertTransform.jl</a>
+        <a href="https://juliastellardynamics.github.io/LinearResponse.jl/dev/">LinearResponse.jl</a>
+    </div>
+    <div class="line"></div>
+</nav>
+
+<!-- Header Banner -->
+<header class="header-banner">
+    <div class="logo-container">
+        <img src="css/logo.png" alt="Project Logo" class="logo">
+        <div class="title-container">
+            <h1>JuliaStellarDynamics</h1>
+            <p class="synopsis">Robust and accurate libraries for stellar dynamics</p>
+        </div>
+    </div>
+</header>
+
+<!-- Interactive Colab Notebooks -->
+<section class="colab-notebooks">
+    <h2 class="section-heading">Interactive Examples</h2>
+    <p>Explore the libraries in interactive Colab notebooks: more coming soon!</p>
+    <p><a href="https://colab.research.google.com/drive/1mCShKnyL9gIIuDhLsmvMJSO4F3JlSfSJ?usp=sharing" target="_blank">Calculating frequencies in a user-defined potential (OrbitalElements.jl)</a></p>
+    <p><a href="https://colab.research.google.com/drive/1p4lX5ot5-kKSnIo1XLFchsiOWGQUxEhR?usp=sharing" target="_blank">Computing the poles of a homogeneous plasma (FiniteHilbertTransform.jl)</a></p>
+    <p><i>Colab is not a perfect solution: for each notebook, you'll have to install Julia by running the first cell (which takes approximately two minutes) and then refreshing the page. We're working on alternate solutions, but if anyone has any suggestions, please get in touch!</i></p>
+    <!-- Add more notebook links as needed -->
+</section>
+
+<!-- More Project Description -->
+<section class="project-description">
+    <h2 class="section-heading">Library Descriptions</h2>
+    <p>There are currently four libraries that make up the core of the stellar dynamics calculation engine:</p>
+    <p>The <a href="https://juliastellardynamics.github.io/OrbitalElements.jl/dev/">OrbitalElements.jl</a> Julia library facilitates various transformations of orbital coordinates by providing functionalities to handle any central potential and its derivatives. These transformations allow for the computation of essential parameters such as actions, orbital frequencies, and resonance coordinates.</p>
+    <p><a href="https://juliastellardynamics.github.io/AstroBasis.jl/dev/">AstroBasis.jl</a> offers users the capability to work with biorthogonal bases designed for potential-density pairs. The library is tailored to spheres and discs, however, the software is designed to be easily extendable, allowing users to supply their additional bases through a straightforward template.</p>
+    <p>For the finite Hilbert transform, the library <a href="https://juliastellardynamics.github.io/FiniteHilbertTransform.jl/dev/">FiniteHilbertTransform.jl</a> follows Landau's prescription and employs Legendre polynomials to perform the transform in a robust and accurate manner.</p>
+    <p><a href="#">LinearResponse.jl</a>, serving as the core driver library for linear response calculations, relies on the functionalities of the three preceding libraries. It facilitates the computation of the response matrix, providing the location of any modes in the complex plane. The process involves the Fourier transform of the basis elements, computation of the functions, and concludes with the finite Hilbert transform.</p>
+    <p>For more detail, see the <a href="https://arxiv.org/abs/2311.10630" target="_blank">introductory paper</a>. The source code for each of the libraries is available on GitHub, and we welcome any additions! For those interested in contributing, the issues on GitHub for each library are a good place to start.</p>
+</section>
+
+<!-- Meet the team -->
+<section class="meet-the-team">
+    <h2 class="section-heading">Community</h2>
+    <p>Meet the team: <a href="https://github.com/michael-petersen">Mike Petersen (University of Edinburgh)</a>, <a href="https://github.com/MathieuRoule">Mathieu Roule (IAP)</a>, <a href="https://github.com/jbfouvry">Jean-Baptiste Fouvry (IAP)</a></p>
+    <p>Contact us <a href="michael.petersen@roe.ac.uk">here</a>.</p>
+</section>
+
+<!-- Footer Banner -->
+<footer class="footer-banner">
+    <div class="line"></div>
+    <p>Updated January 2024</p>
+</footer>
+
+</body>
+</html>
+
