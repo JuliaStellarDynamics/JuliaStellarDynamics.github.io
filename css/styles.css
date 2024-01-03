@@ -108,9 +108,22 @@ body {
     text-align: center;
 }
 
-/* Add a media query for smaller screens */
+
+/* Media query for screens 600px or less (typical for mobile devices) */
 @media only screen and (max-width: 600px) {
+    .header-banner {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        width: 30px; /* Adjust logo size for smaller screens */
+    }
+
     body {
         max-width: 100%; /* Allow the width to scale for smaller screens */
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Make dropdown full width on smaller screens */
     }
 }
