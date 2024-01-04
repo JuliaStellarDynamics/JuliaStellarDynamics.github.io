@@ -112,11 +112,15 @@ body {
 /* Media query for screens 600px or less (typical for mobile devices) */
 @media only screen and (max-width: 600px) {
     .header-banner {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 20px 10px; /* Adjust padding for smaller screens */
     }
 
     .logo {
-        width: 30px; /* Adjust logo size for smaller screens */
+        margin-bottom: 10px; /* Add buffer space below logo in mobile version */
+    }
+
+    .logo-container {
+        flex-direction: column; /* Align logo and title vertically */
     }
 
     body {
@@ -126,4 +130,5 @@ body {
     .dropdown-menu {
         width: 100%; /* Make dropdown full width on smaller screens */
     }
+
 }
