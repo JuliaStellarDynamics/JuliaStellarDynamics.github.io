@@ -112,7 +112,7 @@ body {
 /* Media query for screens 600px or less (typical for mobile devices) */
 @media only screen and (max-width: 600px) {
     .header-banner {
-        padding: 20px 10px; /* Adjust padding for smaller screens */
+        padding: 10px 10px; /* Adjust padding for smaller screens */
     }
 
     .logo {
@@ -120,6 +120,7 @@ body {
     }
 
     .logo-container {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
         flex-direction: column; /* Align logo and title vertically */
     }
 
