@@ -22,7 +22,7 @@ body {
 .header-banner {
     /* background-color: #9558B2;*/ /* this is a julia colour, but I don't like it now. */
     color: #333;
-    padding: 40px;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -92,8 +92,9 @@ body {
 .colab-notebooks,
 .meet-the-team,
 .footer-banner {
-    margin: 5px 0; /* Add margin to separate sections */
-    padding: 15px;
+    margin: 10px 0; /* Add margin to separate sections */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section-heading {
@@ -112,7 +113,7 @@ body {
 /* Media query for screens 600px or less (typical for mobile devices) */
 @media only screen and (max-width: 600px) {
     .header-banner {
-        padding: 10px 10px; /* Adjust padding for smaller screens */
+        padding: 10px 10px 0px 10px; /* Adjust padding for smaller screens [top right bottom left */
     }
 
     .logo {
